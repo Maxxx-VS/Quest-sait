@@ -28,12 +28,30 @@ aside h3 {
 }
 
 aside ul {list-style: none}
+
 aside ul li {
     color: #fff;
     display: block;
     margin-top: 20px;
+    transition: transform 500ms ease-in-out;
 }
 
 aside ul li:hover, aside ul a:hover {
+    color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.05);
+}
 
+main {
+    float: left;
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+    width: 70%;
+}
+
+main h1 {font-size: 50px;}
+
+main p {max-width: 400px;
+        margin: 20px auto;
 }
