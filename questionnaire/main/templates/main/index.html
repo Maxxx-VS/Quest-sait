@@ -4,19 +4,36 @@
 
 {% block content %}
     <div class="features">
-        <h1>{{ title }}</h1>
-        <p>pass</p>
-        <button class="btn btn-warning">{% filter upper %}На страницу{% endfilter %}</button>
+        <h1>{{ title }}</h1><br>
+        <div id="button-container"></div>
+        <button onclick = "count_1(), count_2()" class="btn btn-info"><b>НАЧАТЬ ОПРОС</b></button>
 
-        {% for el in values %}
-            {% if el == 'Hello' %}
-                    <p>{{ el|upper }}</p>
-            {% endif %}
-        {% endfor %}
+        <script>
 
-        {% for el in obj %}
-            <p>{{ el }}</p>
-        {% endfor %}
+            function count_1(){
+                let newBtn = document.createElement('button');
+                newBtn.innerText="Вариант-1";
+                document.querySelector('#button-container').appendChild(newBtn);
+                console.log(document.querySelector("selector"));
+
+            }
+
+
+
+
+
+            function count_2(){
+                let newBtn = document.createElement('button');
+                newBtn.innerText="Вариант-2";
+                document.querySelector('#button-container').appendChild(newBtn);
+                console.log(document.querySelector("selector"));
+
+            }
+
+
+
+        </script>
+
 
     </div>
 

@@ -69,3 +69,10 @@ form {
     width: 500px;
     margin-top: 50px;
 }
+
+script .button{
+    color: red;
+    background: red;
+    background-color: red;
+
+}
