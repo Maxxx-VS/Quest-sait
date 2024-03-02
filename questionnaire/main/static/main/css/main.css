@@ -2,6 +2,11 @@ body {
     background: #2c2c2c;
 }
 
+input {
+    border-radius: 5px;
+    width: 75%;
+}
+
 aside {
     float: left;
     background: #181818;
@@ -50,17 +55,22 @@ main {
     width: 70%;
 }
 
-main h1 {font-size: 50px;}
+main h1 {
+    position: center;
+    font-size: 50px;
+
+    }
 
 main p {max-width: 400px;
         margin: 20px auto;
 }
 
 .alert-warning{
-    float: left;
+    position: center;
+    float: center;
     clear: both;
-    width: 400px;
-    margin: 20px 35%;
+    width: 500px;
+
     text-align: left;
 }
 

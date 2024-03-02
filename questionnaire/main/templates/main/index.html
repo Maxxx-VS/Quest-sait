@@ -4,12 +4,14 @@
 
 {% block content %}
     <div class="features">
-
         <h1>{{ title }}</h1><br>
-        <div id="button-container"></div>
-        <button onclick = "count_1(), count_2()" class="btn btn-info"><b>НАЧАТЬ ОПРОС</b></button>
-
-
+        <b><p>Добро пожаловать на сайт - опросник!</p></b>
+        <p>Здесь ты сможешь ответить на впоросы и узнать многое о себе</p>
+        <p>Нажимай на кнопку "<b>ПРОЙТИ ОПРОС</b>"</p>
+        <form method="POST" action="{% url 'news_home' %}">
+        {% csrf_token %}
+            <button type="submit" class="btn btn-info"><b>ПРОЙТИ ОПРОС</b></button>
+        </form>
     </div>
 
 

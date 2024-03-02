@@ -12,17 +12,17 @@
 </head>
 <body>
     <aside>
-            <img src="{% static 'main/img/logo.jpg' %}" alt="Логотип">
-            <span class="logo">Динамический опросник</span>
-            <h3>Навигация</h3>
-            <ul>
-                <a href="{% url 'home' %}"><li><i class="fa-solid fa-house"></i> Главная</li></a>
-                <a href="{% url 'about' %}"><li><i class="fa-solid fa-person"></i> Про создателя</li></a>
-                <a href="{% url 'news_home' %}"><li><i class="fa-solid fa-phone"></i> Новости</li></a>
-                <a href=""><li><i class="fa-solid fa-envelope"></i> Контакты</li></a>
-                <a href="{% url 'create' %}"><li><button class="btn btn-info"><i class="fas fa-plus-circle"></i> Добавить новость</li></a>
+        <img src="{% static 'main/img/logo.jpg' %}" alt="Логотип">
+        <span class="logo">Динамический опросник</span>
+        <h3>Навигация</h3>
+        <ul>
+            <a href="{% url 'home' %}"><li><i class="fa-solid fa-house"></i> Главная</li></a>
+            <a href="{% url 'news_home' %}"><li><i class="fa-solid fa-phone"></i> Пройти опрос</li></a>
+            <a href="{% url 'about' %}"><li><i class="fa-solid fa-person"></i> Автор сайта</li></a>
+            <a href=""><li><i class="fa-solid fa-envelope"></i> Контакты</li></a>
+            <a href="{% url 'create' %}"><li><button class="btn btn-info"><i class="fas fa-plus-circle"></i> Добавить новость</li></a>
 
-            </ul>
+        </ul>
     </aside>
     <main>
         {% block content %}
